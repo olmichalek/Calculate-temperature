@@ -13,10 +13,10 @@
 <script>
 
 function Celsius() {
-var dupa = document.getElementById("gogo").value;
-var kupa = (5/9) * (dupa - 32);
+var tempC = document.getElementById("gogo").value;
+var formula = (5/9) * (tempC - 32);
 
-document.getElementById("celsius").innerHTML = "The result equals: " + Math.round(kupa) + " C ";
+document.getElementById("celsius").innerHTML = "The result equals: " + Math.round(formula) + " C ";
 }
 
 function Faren() {
