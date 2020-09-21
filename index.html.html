@@ -1,0 +1,33 @@
+<html>
+<body>
+<p>Convert the temperature from Farenheit to Celsius</p>
+<input type="text" id="gogo" placeholder="enter the temperature in F">
+<input type="button" onclick="Celsius();" value="check">
+</form>
+<p id="celsius"></p>
+<p>Convert the temperature from Celsius to Farenheit</p>
+<input type="text" id="logo" placeholder="enter the temperature in C">
+<input type="button" onclick="Faren();" value="check">
+</form>
+<p id="faren"></p>
+<script>
+
+function Celsius() {
+var dupa = document.getElementById("gogo").value;
+var kupa = (5/9) * (dupa - 32);
+
+document.getElementById("celsius").innerHTML = "The result equals: " + Math.round(kupa) + " C ";
+}
+
+function Faren() {
+var noga = document.getElementById("logo").value;
+var roga = (noga * 9/5) +32;
+
+document.getElementById("faren").innerHTML = "The result equals " + Math.round(roga) + " F ";
+}
+</script>
+
+
+<input type="text" readonly="readonly" name="a_name" />
+</body>
+</html>
